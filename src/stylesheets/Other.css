@@ -1,0 +1,31 @@
+.App {
+  align-items: center;
+  text-align: center;
+  /* width: 80%; */
+}
+
+.search {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 20px;
+}
+
+.card {
+  width: max-content;
+  margin: 1rem 1rem;
+}
+
+.emoji-container {
+}
+
+.emojiList {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.apple-emoji{
+  font-size: 80px;
+}

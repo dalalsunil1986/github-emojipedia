@@ -50,9 +50,15 @@ export default class EmojiContainer extends Component {
   }
 
   updateSearchTerm = (event) => {
+    event.preventDefault();
     this.setState({
       searchTerm: event.target.value
     })
+  }
+
+  handleSearchTermSubmit = (event) => {
+    event.preventDefault();
+    this.props.onSearchTermSubmit(this.textInput.value)
   }
 
   render() {
@@ -62,7 +68,7 @@ export default class EmojiContainer extends Component {
         <Header searchTerm={this.state.searchTerm} updateSearchTerm={this.updateSearchTerm} key={Math.floor(Math.random() * 10000000)}/>
         <NavBar />
         <main className="wrap">
-          {this.state.emojis ? <EmojiList emojis={this.state.emojis} searchTerm={this.state.searchTerm} key={Math.floor(Math.random() * 1000000)}/> : "Loading Emojis..." }
+          {this.state.emojis ? <EmojiList emojis={this.state.emojis} searchTerm={this.state.searchTerm} key={Math.floor(Math.random() * 100000)}/> : "Loading Emojis..." }
         </main>
         <Footer />
       </div>

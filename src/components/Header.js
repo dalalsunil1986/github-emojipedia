@@ -7,9 +7,9 @@ const Header = (props) => {
       <a href="/">
         <h1>github emojis</h1>
       </a>
-      <h2>A github emoji shortcode guide</h2>
+      <h2>All the github emojis and shortcodes</h2>
       <a href="/">
-        <h3>powered by github's emoji api</h3>
+        {/* <h3></h3> */}
       </a>
 			<div className="header-buttons">
 

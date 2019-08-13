@@ -583,12 +583,13 @@ main.wrap {
   position: fixed;
   width: 100%;
   bottom: 0;
+  margin-right: 50px;
 }
 .footer nav {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end;
-  text-align: end;
+  justify-content: flex-start;
+  text-align: center;
 }
 .footer nav a:after {
   content: "·";

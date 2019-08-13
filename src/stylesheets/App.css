@@ -25,3 +25,7 @@
 	justify-content: center;
 	flex-flow: row wrap;
 }
+
+.apple-emoji{
+  font-size: 80px;
+}

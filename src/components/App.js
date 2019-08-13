@@ -1,23 +1,14 @@
 import React from "react";
 import EmojiContainer from "./EmojiContainer";
 
-import "../stylesheets/App.css";
+import "../stylesheets/Test.css";
 
 function App() {
+  console.log("Todo", 
+  "1. add filter buttons on home 2. add search button with modal on home 3. justify footer to bottom of screen 4. postgres database store? check database for api updates on render? or optional invoke from admin to update database")
   return (
     <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="navbar-brand">Emojipedia</div>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        {/* <form className="form-inline my-2 my-lg-0">
-          <input className="form-control mr-sm-2" type="text" placeholder="Search" />
-          <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form> */}
-      </nav>
-
-      <EmojiContainer />
+      <EmojiContainer key={Math.floor(Math.random() * 100000000)}/>
     </div>
   );
 }

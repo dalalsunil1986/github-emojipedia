@@ -15,11 +15,11 @@ const EmojiList = (props) => {
   }
   
   const displayedEmojis = getDisplayedEmojis().map(emoji => {
-    return <Emojis emoji={emoji} />
+    return <Emojis emoji={emoji} key={Math.floor(Math.random() * 10000000)}/>
   })
 
   return (
-    <div className="emojiList">
+		<div className="row center-xs" id="gitmoji-list">
       {displayedEmojis}
     </div>
   )

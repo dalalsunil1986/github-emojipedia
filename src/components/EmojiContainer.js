@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import EmojiList from './EmojiList'
-import Search from './Search'
+import NavBar from './NavBar'
+import Header from './Header'
+import Footer from './Footer'
 
 export default class EmojiContainer extends Component {
   constructor () {
@@ -14,8 +16,8 @@ export default class EmojiContainer extends Component {
   componentDidMount() {
       this.fetchEmojis()
       setTimeout(() => {
-        console.log("emojis state", this.state.emojis)
-      }, 1000);
+        this.emojiHeaderBackgroundColors()
+      }, 2000);
   }
 
   fetchEmojis = () => {
@@ -35,6 +37,18 @@ export default class EmojiContainer extends Component {
     })
   }
 
+  emojiHeaderBackgroundColors = () => {
+    var emojiHeaders = document.getElementsByClassName('emoji-header')
+    for(var i=0, len=emojiHeaders.length; i<len; i++)
+    {
+      var x = Math.floor(Math.random() * 256);
+      var y = Math.floor(Math.random() * 256);
+      var z = Math.floor(Math.random() * 256);
+      var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+      emojiHeaders[i].style["background-color"] = bgColor;
+    }
+  }
+
   updateSearchTerm = (event) => {
     this.setState({
       searchTerm: event.target.value
@@ -44,10 +58,13 @@ export default class EmojiContainer extends Component {
   render() {
 
     return(
-      <div className="emoji-container">
-        <Search searchTerm={this.state.searchTerm} updateSearchTerm={this.updateSearchTerm} />
-
-        {this.state.emojis ? <EmojiList emojis={this.state.emojis} searchTerm={this.state.searchTerm}/> : "Loading Emojis..." }
+      <div>
+        <Header searchTerm={this.state.searchTerm} updateSearchTerm={this.updateSearchTerm} key={Math.floor(Math.random() * 10000000)}/>
+        <NavBar />
+        <main className="wrap">
+          {this.state.emojis ? <EmojiList emojis={this.state.emojis} searchTerm={this.state.searchTerm} key={Math.floor(Math.random() * 1000000)}/> : "Loading Emojis..." }
+        </main>
+        <Footer />
       </div>
     )
   }

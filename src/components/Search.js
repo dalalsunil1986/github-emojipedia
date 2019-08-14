@@ -10,7 +10,7 @@ const Search = (props) => {
           // value={props.searchTerm}
           // onChange={props.updateSearchTerm}
         />
-        <button className="search-button" ><span role="img" aria-label="Atom">🔍</span>Search</button>
+        <button className="search-button" ><span role="img" aria-label="Atom">🔍</span></button>
       </form>
 
   );

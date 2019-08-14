@@ -128,7 +128,7 @@
   top: 44px;
   left: 18px;
   right: 18px;
-  height: 3px;
+  height: 5px;
   background: #ff5a79;
   border-radius: 50px;
 }
@@ -138,7 +138,7 @@
   display: block;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 5px;
   border-radius: 50px;
   background-color: #ff5a79;
   content: "";
@@ -509,6 +509,45 @@ section {
 .btn .icon {
   margin-right: 0.25em;
 }
+.search-form {
+  padding-top: 1.5em;
+  margin-bottom: -1em;
+}
+.search-input, .search-button {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 0;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: none;
+  margin: 0.25em 0;
+  position: relative;
+  color: black;
+  outline: none;
+  border: none;
+}
+.search-button:hover {
+  background-color: #ff5a79;
+}
+.search-button {
+  margin-left: 0px;
+  font-size: 15px;
+  padding-top: 11px;
+  padding-bottom: 8px;
+  border-radius: 0 4px 4px 0;
+  color: rgb(88, 88, 88);
+  background-color: rgb(223, 223, 223);
+}
+.search-button::-moz-focus-inner {
+  border: 0;
+}
+.search-input{
+  font-size: 21px;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+  color: rgb(221, 140, 153);
+}
 .wrap {
   max-width: 1100px;
   margin: 0 auto;
@@ -528,7 +567,7 @@ main.wrap {
     "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
 }
 .emoji-card {
-  background-color: burlywood;
+  background-color: rgb(255, 244, 231);
   border-radius: 4px;
   box-shadow: 0 1px 2px 0 rgba(168, 182, 191, 0.6);
   flex: 1;
@@ -564,11 +603,6 @@ main.wrap {
 .emoji-visible {
   opacity: 1;
 }
-.contributor-picture {
-  max-width: 100%;
-  border-radius: 50%;
-  padding: 0.5em;
-}
 .icon {
   width: 1em;
   height: 1em;
@@ -580,7 +614,6 @@ main.wrap {
   padding: 1.5em;
   background-color: #00e5ff;
   color: #fff;
-  position: fixed;
   width: 100%;
   bottom: 0;
   margin-right: 50px;
@@ -627,192 +660,7 @@ main.wrap {
     font-size: 19px;
   }
 }
-.art {
-  background-color: #ff7281;
-}
-.apple {
-  background-color: #f94e43;
-}
-.bookmark {
-  background-color: #80deea;
-}
-.bug {
-  background-color: #8cd842;
-}
-.checkered-flag {
-  background-color: #ff7281;
-}
-.construction {
-  background-color: #ffb74d;
-}
-.fire {
-  background-color: #ff9d44;
-}
-.green-heart {
-  background-color: #c5e763;
-}
-.lock {
-  background-color: #ffce49;
-}
-.memo {
-  background-color: #00e676;
-}
-.penguin {
-  background-color: #fa9a3f;
-}
-.rocket {
-  background-color: #00a9f0;
-}
-.rotating-light {
-  background-color: #536dfe;
-}
-.sparkles {
-  background-color: #ffe55f;
-}
-.white-check-mark {
-  background-color: #77e856;
-}
-.wrench {
-  background-color: #ffc400;
-}
-.zap {
-  background-color: #40c4ff;
-}
-.construction-worker {
-  background-color: #64b5f6;
-}
-.arrow-up {
-  background-color: #00e676;
-}
-.arrow-down {
-  background-color: #ef5350;
-}
-.recycle {
-  background-color: #77e856;
-}
-.tada {
-  background-color: #f74d5f;
-}
-.lipstick {
-  background-color: #80deea;
-}
-.whale {
-  background-color: #00cbe8;
-}
-.heavy-plus-sign {
-  background-color: #00e676;
-}
-.heavy-minus-sign {
-  background-color: #ef5350;
-}
-.chart-with-upwards-trend {
-  background-color: #cedae6;
-}
-.globe-with-meridians {
-  background-color: #e7f4ff;
-}
-.ambulance {
-  background-color: #fb584a;
-}
-.pencil {
-  background-color: #ffce49;
-}
-.hankey {
-  background-color: #a78674;
-}
-.package {
-  background-color: #fdd0ae;
-}
-.alien {
-  background-color: #c5e763;
-}
-.truck {
-  background-color: #ef584a;
-}
-.rewind {
-  background-color: #56d1d8;
-}
-.twisted-rightwards-arrows {
-  background-color: #56d1d8;
-}
-.page-facing-up {
-  background-color: #d9e3e8;
-}
-.bento {
-  background-color: #ff5864;
-}
-.boom {
-  background-color: #f94f28;
-}
-.ok-hand {
-  background-color: #c5e763;
-}
-.wheelchair {
-  background-color: #00b1fb;
-}
-.bulb {
-  background-color: #ffce49;
-}
-.beers {
-  background-color: #fbb64b;
-}
-.speech-balloon {
-  background-color: #cedae6;
-}
-.card-file-box {
-  background-color: #c5e763;
-}
-.green-apple {
-  background-color: #8dc448;
-}
-.robot {
-  background-color: #39c2f1;
-}
-.mute {
-  background-color: #e6ebef;
-}
-.loud-sound {
-  background-color: #23b4d2;
-}
-.busts-in-silhouette {
-  background-color: #d9e3e8;
-}
-.children-crossing {
-  background-color: #ffce49;
-}
-.pushpin {
-  background-color: #39c2f1;
-}
-.building-construction {
-  background-color: #ffe55f;
-}
-.iphone {
-  background-color: #40c4ff;
-}
-.clown-face {
-  background-color: #ff7281;
-}
-.egg {
-  background-color: #77e856;
-}
-.see-no-evil {
-  background-color: #8bdfe7;
-}
-.camera-flash {
-  background-color: #00a9f0;
-}
-.alembic {
-  background-color: #7f39fb;
-}
-.mag {
-  background-color: #ffe55f;
-}
-.wheel-of-dharma {
-  background-color: #40c4ff;
-}
-.label {
-  background-color: #cb63e6;
-}
+
 @keyframes zomg {
   0%,
   100% {

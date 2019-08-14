@@ -2,15 +2,15 @@ import React from "react";
 
 const Search = (props) => {
   return (
-      <form className="form-inline my-2 my-lg-0" onSubmit={props.updateSearchTerm}>
+      <form className="search-form" >
         <input
-          className="form-control mr-sm-2"
+          className="search-input"
           type="text"
           placeholder="Search Emojis"
-          value={props.searchTerm}
-          onChange={props.updateSearchTerm}
+          // value={props.searchTerm}
+          // onChange={props.updateSearchTerm}
         />
-        <button className="btn btn-pink" type="submit"><span role="img" aria-label="Atom">🔍</span>Search</button>
+        <button className="search-button" ><span role="img" aria-label="Atom">🔍</span>Search</button>
       </form>
 
   );

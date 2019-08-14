@@ -10,9 +10,9 @@ const Footer = () => {
           </div>
           <div className="col-sm-6 footer-nav">
             <nav>
-              <a href="/about">About</a>
-              <a href="/contributors">Contributors</a>
               <a href="https://github.com/brookton/github-emojipedia">GitHub</a>
+              <a href="https://twitter.com/intent/tweet?text=Github%20Emojipedia%20%E2%80%93%20An%20%23emoji%20guide%20for%20Github%20commit%20messages%20by%20%40DavidBrookton%20%F0%9F%98%8D%F0%9F%98%9C&amp;url=https://github.com/brookton/github-emojipedia">Tweet</a>
+              <a href="https://davidbrookton.com">Author</a>
             </nav>
           </div>
         </div>

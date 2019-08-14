@@ -4,6 +4,7 @@ import NavBar from './NavBar'
 import Header from './Header'
 import Footer from './Footer'
 
+const APIURL = "https://api.github.com/emojis"
 export default class EmojiContainer extends Component {
   constructor () {
     super()
@@ -21,7 +22,7 @@ export default class EmojiContainer extends Component {
   }
 
   fetchEmojis = () => {
-    let url = "https://api.github.com/emojis"
+    let url = APIURL
     fetch(url)
       .then(response => response.json())
       .then(resp => this.restructureData(resp))

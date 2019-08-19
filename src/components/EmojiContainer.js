@@ -55,6 +55,7 @@ export default class EmojiContainer extends Component {
     this.setState({
       searchTerm: event.target.value
     })
+    this.emojiHeaderBackgroundColors()
   }
 
   handleSearchTermSubmit = (event) => {

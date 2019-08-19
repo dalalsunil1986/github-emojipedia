@@ -7,10 +7,10 @@ const Search = (props) => {
           className="search-input"
           type="text"
           placeholder="Search Emojis"
-          // value={props.searchTerm}
-          // onChange={props.updateSearchTerm}
+          value={props.searchTerm}
+          onChange={props.updateSearchTerm}
         />
-        <button className="search-button" ><span role="img" aria-label="Atom">🔍</span></button>
+        <button className="search-button" onClick={props.updateSearchTerm}><span role="img" aria-label="Atom">🔍</span></button>
       </form>
 
   );

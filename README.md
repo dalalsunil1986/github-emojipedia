@@ -16,7 +16,7 @@ This app demonstrates knowledge of:
 
 ## :cowboy_hat_face: Github Emojipedia
 
-[Click here for the deployed application!]()
+[Click here for the deployed application!](https://github-emojipedia.netlify.com/)
 
 ![Alt text](./public/screenshot.gif?raw=true "Github Emojipedia React Application GIF")
 
